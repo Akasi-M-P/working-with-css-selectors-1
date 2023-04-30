@@ -4,12 +4,106 @@
 <head>
     <title>Styling Exercise</title>
     <style>
-        /* Your CSS code goes here */
+        body {
+            background-color: rgb(216, 206, 194);
+        }
+        .Container {
+            margin: auto;
+             width: 80%;
+             background-color: #F1F6F9;
+        }
+
+        .header h1 {
+            text-align: center;
+            color: #212A3E;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 18px;
+        }
+
+        .header ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        nav {
+            padding: 0.5em;
+            background-color: #212A3E;
+           
+        }
+
+    nav a{
+        text-decoration-line: none;
+         color: #9BA4B5;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-size: 18px;
+    }
+
+    nav a:hover {
+        color: whitesmoke;
+    }
+
+    footer {
+        background-color: #19376D;
+        text-align: center;
+        padding: 5em;
+        color: whitesmoke;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif   ;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 2em;
+    }
+    
+    footer li {
+         list-style: none;
+         color: #9BA4B5;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-size: 18px;
+          display: flex;
+    }
+
+    .main {
+        padding: 5em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        background-color: #A5D7E8;
+    }
+
+    main p::first-letter {
+        color: rgb(75, 54, 8);
+        font-size: 32px;
+        font-weight: 800;
+    }
+
+    .main li {
+        list-style: none;
+        color: #1953c0;
+        font-weight: 700;
+    }
+
+    #first-item {
+        color: #859954;
+    }
+
+    #first-item li {
+        width: 100px;
+        border: 1px solid black;
+    }
+
+    .main p {
+        color: #8a5b2f;
+    }
+
+
     </style>
 </head>
 
 <body>
-    <header class="header">
+    <div class="Container">
+        <header class="header">
         <h1>My Website</h1>
         <nav>
             <ul>
@@ -20,11 +114,11 @@
         </nav>
     </header>
     <main class="main">
-        <h2>List of Items</h2>
+        <h2>What we offer</h2>
         <ul>
-            <li id="first-item">Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+            <li id="first-item">Software Development</li>
+            <li>Graphic Design</li>
+            <li>UI/UX Design</li>
         </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod tortor ut mauris tincidunt, in
             ultricies nibh feugiat. Suspendisse potenti. Fusce eleifend felis eget suscipit bibendum. Mauris facilisis
@@ -42,6 +136,8 @@
             </ul>
         </nav>
     </footer>
+    </div>
+    
 </body>
 
 </html>
